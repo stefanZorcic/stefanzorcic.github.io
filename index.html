@@ -11,8 +11,55 @@
     .logo {
       color:gray;
       font-family: verdana;
-  font-size: 160%;
+      font-size: 160%;
     }
+
+    .container2{
+      width:70%;
+    }
+
+    #wrap {
+    height: 100%;
+    position: relative;
+
+    }
+
+    .window1 { 
+      width:80%;
+      position:relative;
+      float:left;
+      height:100%;
+
+    }
+
+    .window2 { 
+      width:20%;
+      position:relative;
+      background-color:#ededed;
+      float:left;
+      height:100%;
+
+    }
+
+    .window2Child{
+      display: flex;
+      justify-content: center;
+      margin-top: 10%;
+      
+    }
+
+    .fontText {
+      color:black;
+      font-family: verdana;
+      font-size: 130%;
+    }
+
+    .sideText {
+      color:black;
+      font-family: verdana;
+      font-size: 100%;
+    }
+
   </style>
 </head>
 <body>
@@ -20,22 +67,58 @@
 <div class="jumbotron text-center">
   <h1>Stefan Zorcic</h1>
 
-  <a href="./main.html" class="logo" >About Me</a>
-  <a href="./Projects.html" class="logo" >| Projects</a>
+  <a href="./index.html" class="logo" >About Me</a>
   <a href="./Publications.html" class="logo" >| Publications</a>
   <a href="./Assets/Resume ENGL 119.pdf" class="logo" >| Résumé</a>
 
 </div>
-  
-<div class="container">
-  <div class="row">
-    <h2>About Me</h2>
-    <p>Hi, I am Stefan Zorcic!</p>
-    <p>I am currently a Computer Science student at the University of Waterloo Class of 2028.</p>
-    <p>I love solving difficult mathematicial and computer science problems! You can read more about research papers that I contributed to here. Additionally, you can see an index of competitive programming problems I solve on my DMOJ problem here. </p> 
-    <p>When I am not working on various theoretical problems I work on the other side of computer since through practical software development. You can read more about my various side projects here, or my past employment experience here.</p>
-  </div>
-</div>
+
+
+
+    <div class="container">
+      <div class="row">
+        <div id="wrap">
+        <div class="window1">
+          <h2>About Me</h2>
+
+          <p class=fontText>Hi, I am Stefan Zorcic!</p>
+          <p class=fontText>I am currently a Computer Science student at the University of Waterloo Class of 2028.</p>
+          <p class=fontText>I love solving difficult mathematical and computer science problems! You can read more about research papers that I contributed to <a href="./Publications.html">here</a>. Additionally, you can see a list of competitive programming problems I solved on my DMOJ account  <a href="https://dmoj.ca/user/sz_8">here</a>. </p> 
+          <p class=fontText>When I am not working on various theoretical problems I work on the other side of computer science through practical software development. You can read more about my various side projects <a href="https://github.com/stefanZorcic?tab=repositories">here</a>, or my past employment experience <a href="./Assets/Resume ENGL 119.pdf">here</a>.</p>
+          <p class=fontText>Outside the realm of mathematics and computer science, I enjoy playing classical guitar, reading philosophy, and playing chess.</p>
+          <p class=fontText>Please don't hesitate to reach out! My contact information is located on the side.</p>
+        </div>
+        <div class="window2">
+          <div class="window2Child">
+          <img style="width: 70%;border-radius: 50%;"src="./Assets/profileImage.jpeg" alt="Profile Image"> 
+          
+          </div>
+          <br>
+          <b>Email:</b>
+          <p class=sideText>stefan.zorcic@gmail.com</p>
+          <b>School Email:</b>
+          <p class=sideText>szorcic@uwaterloo.ca</p>
+          <b>Github:</b>
+          <br>
+          <a href="https://github.com/stefanZorcic" class=sideText>https://github.com/stefanZorcic</a>
+          <p></p>
+          <p></p>
+          <p></p>
+
+        </div>
+
+      </div>
+    
+    
+      </div>
+    </div>
+
+
+
+
+
+
+
 
 </body>
 </html>
